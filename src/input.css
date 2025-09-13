@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom styles */
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
+
+
+
+.holder {
+  @apply max-w-[1512px] mx-auto px-6 lg:px-8;
+}
+
+
 
 .holder {
   @apply max-w-[1230px] mx-auto px-6 lg:px-8;
