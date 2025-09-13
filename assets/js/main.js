@@ -41,3 +41,22 @@ document.addEventListener('DOMContentLoaded', function () {
         animateCounter('awards-counter', '300+', 2000);
     }, 500);
 });
+
+
+// hero-slider js code
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            // If you want pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
