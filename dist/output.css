@@ -2774,6 +2774,10 @@ video {
   line-height: 1.25;
 }
 
+.leading-\[117\%\]{
+  line-height: 117%;
+}
+
 .tracking-wide{
   letter-spacing: 0.025em;
 }
@@ -3786,6 +3790,19 @@ body {
   }
 }
 
+.\[\&\>p\]\:mx-auto>p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\[\&\>p\]\:mt-4>p{
+  margin-top: 1rem;
+}
+
+.\[\&\>p\]\:max-w-\[700px\]>p{
+  max-width: 700px;
+}
+
 .\[\&\>p\]\:pt-4>p{
   padding-top: 1rem;
 }
@@ -3801,4 +3818,9 @@ body {
 
 .\[\&\>p\]\:text-white\/80>p{
   color: rgb(255 255 255 / 0.8);
+}
+
+.\[\&\>p\]\:text-\[\#abb8c3\]>p{
+  --tw-text-opacity: 1;
+  color: rgb(171 184 195 / var(--tw-text-opacity, 1));
 }
