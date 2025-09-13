@@ -7,6 +7,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.holder {
+  @apply max-w-[1512px] mx-auto px-6 lg:px-8;
+}
+
 /* Custom component styles */
 @layer components {
   .btn-primary {
@@ -25,6 +29,17 @@ body {
     @apply text-3xl font-bold text-pink-600 mb-4;
   }
 }
+
+
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out;
+    }
+    #mobile-menu.open {
+      max-height: 500px; /* large enough to fit your menu */
+    }
+
 
 /* Hero Slider Styles */
 .hero-slider {
