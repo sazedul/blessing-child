@@ -1,0 +1,24 @@
+{
+  "name": "blessing-child",
+  "version": "1.0.0",
+  "description": "A beautiful children's website built with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "tailwindcss",
+    "html",
+    "css",
+    "children",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
