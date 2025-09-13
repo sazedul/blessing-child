@@ -115,6 +115,15 @@ body {
   background: rgba(255, 255, 255, 0.8);
 }
 
+/* Header adjustments for two-part header */
+.top-contact-bar {
+  height: 2.5rem; /* 40px */
+}
+
+.main-navigation-header {
+  top: 2.5rem; /* 40px */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-slider {
@@ -137,5 +146,15 @@ body {
 
   .slider-dots {
     bottom: 1rem;
+  }
+
+  /* Mobile header adjustments */
+  .top-contact-bar {
+    height: auto;
+    min-height: 3rem;
+  }
+
+  .main-navigation-header {
+    top: auto;
   }
 }
