@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,13 +10,17 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.counter-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.counter-card:hover {
+  transform: translateY(-5px);
+}
 
 .holder {
   @apply max-w-[1512px] mx-auto px-6 lg:px-8;
 }
-
-
 
 .holder {
   @apply max-w-[1230px] mx-auto px-6 lg:px-8;
@@ -41,16 +45,14 @@ body {
   }
 }
 
-
-    #mobile-menu {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-in-out;
-    }
-    #mobile-menu.open {
-      max-height: 500px; /* large enough to fit your menu */
-    }
-
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+#mobile-menu.open {
+  max-height: 500px; /* large enough to fit your menu */
+}
 
 /* Hero Slider Styles */
 .hero-slider {
