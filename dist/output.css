@@ -1074,6 +1074,10 @@ video {
   max-width: 64rem;
 }
 
+.max-w-96{
+  max-width: 24rem;
+}
+
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -2736,6 +2740,10 @@ video {
   line-height: 29px;
 }
 
+.leading-\[117\%\]{
+  line-height: 117%;
+}
+
 .tracking-wide{
   letter-spacing: 0.025em;
 }
@@ -3697,8 +3705,45 @@ body {
   }
 }
 
+.\[\&\>h2\]\:mb-4>h2{
+  margin-bottom: 1rem;
+}
+
+.\[\&\>p\]\:mx-auto>p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\[\&\>p\]\:mt-4>p{
+  margin-top: 1rem;
+}
+
+.\[\&\>p\]\:max-w-\[200px\]>p{
+  max-width: 200px;
+}
+
+.\[\&\>p\]\:max-w-\[500px\]>p{
+  max-width: 500px;
+}
+
+.\[\&\>p\]\:max-w-\[900px\]>p{
+  max-width: 900px;
+}
+
+.\[\&\>p\]\:max-w-\[800px\]>p{
+  max-width: 800px;
+}
+
+.\[\&\>p\]\:max-w-\[700px\]>p{
+  max-width: 700px;
+}
+
 .\[\&\>p\]\:pt-4>p{
   padding-top: 1rem;
+}
+
+.\[\&\>p\]\:text-center>p{
+  text-align: center;
 }
 
 .\[\&\>p\]\:font-\[Poppins\]>p{
@@ -3721,4 +3766,17 @@ body {
 
 .\[\&\>p\]\:text-white\/80>p{
   color: rgb(255 255 255 / 0.8);
+}
+
+.\[\&\>p\]\:text-black\/80>p{
+  color: rgb(0 0 0 / 0.8);
+}
+
+.\[\&\>p\]\:text-\[\]>p{
+  color: ;
+}
+
+.\[\&\>p\]\:text-\[\#abb8c3\]>p{
+  --tw-text-opacity: 1;
+  color: rgb(171 184 195 / var(--tw-text-opacity, 1));
 }
