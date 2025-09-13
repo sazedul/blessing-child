@@ -8,7 +8,7 @@ body {
 }
 
 .holder {
-  @apply max-w-[1512px] mx-auto px-6 lg:px-8;
+  @apply max-w-[1230px] mx-auto px-6 lg:px-8;
 }
 
 /* Custom component styles */

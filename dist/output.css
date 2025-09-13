@@ -802,10 +802,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -1516,16 +1512,16 @@ video {
   gap: 3rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2056,6 +2052,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
@@ -2109,11 +2110,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-br {
@@ -2332,11 +2328,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .pt-32 {
   padding-top: 8rem;
 }
@@ -2533,6 +2524,11 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
+.text-\[\#6c757d\] {
+  --tw-text-opacity: 1;
+  color: rgb(108 117 125 / var(--tw-text-opacity, 1));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
@@ -2586,16 +2582,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#6c757d\] {
-  --tw-text-opacity: 1;
-  color: rgb(108 117 125 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -2993,7 +2979,7 @@ body {
 .holder {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1512px;
+  max-width: 1230px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -3325,10 +3311,6 @@ body {
     display: none;
   }
 
-  .md\:h-12 {
-    height: 3rem;
-  }
-
   .md\:h-20 {
     height: 5rem;
   }
@@ -3352,11 +3334,6 @@ body {
   .md\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  }
-
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .md\:py-4 {
