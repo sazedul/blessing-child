@@ -11,6 +11,16 @@ body {
 
 
 
+.holder {
+  @apply max-w-[1512px] mx-auto px-6 lg:px-8;
+}
+
+
+
+.holder {
+  @apply max-w-[1512px] mx-auto px-6 lg:px-8;
+}
+
 /* Custom component styles */
 @layer components {
   .btn-primary {
@@ -27,5 +37,149 @@ body {
 
   .section-title {
     @apply text-3xl font-bold text-pink-600 mb-4;
+  }
+}
+
+
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out;
+    }
+    #mobile-menu.open {
+      max-height: 500px; /* large enough to fit your menu */
+    }
+
+
+/* Hero Slider Styles */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.slider-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.slider-btn i {
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Header adjustments for two-part header */
+.top-contact-bar {
+  height: 2.5rem; /* 40px */
+}
+
+.main-navigation-header {
+  top: 2.5rem; /* 40px */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 80vh;
+    min-height: 500px;
+  }
+
+  .slider-navigation {
+    padding: 0 1rem;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-btn i {
+    font-size: 1rem;
+  }
+
+  .slider-dots {
+    bottom: 1rem;
+  }
+
+  /* Mobile header adjustments */
+  .top-contact-bar {
+    height: auto;
+    min-height: 3rem;
+  }
+
+  .main-navigation-header {
+    top: auto;
   }
 }
