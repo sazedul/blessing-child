@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kiddos - Kids School Website Template</title>
   <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/all.min.css">
 
@@ -88,6 +89,47 @@
       </nav>
     </div>
   </header>
+
+<!-- Hero Slider -->
+  <Section>
+    <!-- Swiper -->
+    <div class="swiper bannerSlider h-[600px] ">
+      <div class="swiper-wrapper ">
+        <!-- Slides -->
+        <div
+          class="swiper-slide  !flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center relative z-0"
+          style="background-image: url(https://preview.colorlib.com/theme/kiddos/images/bg_1.jpg);">
+          <div class="overlay"></div>
+          <div class="holder text-center relative z-10">
+            <h2 class=" text-4xl lg:text-6xl font-extrabold text-white mb-8 ">Perfect Learned<span class="block"> For
+                Your Child</span></h2>
+            <a href="#"
+              class="bg-[#f1453d] py-4 px-6 rounded-[40px] text-white text-base font-normal cursor-pointer transition hover:bg-red-800">Read
+              More</a>
+          </div>
+        </div>
+
+        <div
+          class="swiper-slide  !flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center relative z-0"
+          style="background-image: url(https://preview.colorlib.com/theme/kiddos/images/bg_2.jpg);">
+          <div class="overlay"></div>
+          <div class="holder text-center relative z-10">
+            <h2 class=" text-4xl lg:text-6xl font-extrabold text-white mb-8 ">Perfect Learned<span class="block"> For
+                Your Child</span></h2>
+            <a href="#"
+              class="bg-[#f1453d] py-4 px-6 rounded-[40px] text-white text-base font-normal cursor-pointer transition hover:bg-red-800">Read
+              More</a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Optional pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </Section>
 
   <!-- what we offer section -->
   <section class="py-10">
@@ -441,12 +483,13 @@
         </div>
       </div>
 
-    
+
     </div>
   </section>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="/assets/js/main.js"></script> -->
   <script src="/assets/js/main.js">
 
   </script>

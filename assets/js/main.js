@@ -44,19 +44,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // hero-slider js code
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            loop: true,
-            slidesPerView: 1,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+const swiper = new Swiper(".swiper.bannerSlider", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 
-            // If you want pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
-        });
+    // If you want pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
