@@ -54,135 +54,44 @@ body {
   max-height: 500px; /* large enough to fit your menu */
 }
 
-/* Hero Slider Styles */
-.hero-slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
+
+
+/* testimonial slider */
+
+/* Container should have a fixed height or be inside a flex/grid */
+.testimonial-swiper {
+    width: 100%;
+  height: auto;
+  min-height: 300px;
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+/* Each slide */
+.testimonial-swiper .swiper-slide {
   display: flex;
-  align-items: center;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
-.slider-navigation {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.slider-btn {
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  pointer-events: auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
-.slider-btn:hover {
-  background: rgba(255, 255, 255, 1);
-  transform: scale(1.1);
+
+/* hero-slider-css */
+
+
+.overlay {
+  @apply bg-black/20 absolute top-0 bottom-0 left-0 right-0;
 }
 
-.slider-btn i {
-  font-size: 1.2rem;
-  color: #374151;
+
+/* Swiper Banner slider */
+
+.swiper.bannerSlider .swiper-pagination .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-white opacity-100;
 }
 
-.slider-dots {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.5rem;
-  z-index: 10;
+.swiper.bannerSlider .swiper-pagination .swiper-pagination-bullet-active {
+  @apply bg-blue-600;
 }
 
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.dot.active {
-  background: rgba(255, 255, 255, 1);
-  transform: scale(1.2);
-}
-
-.dot:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-/* Header adjustments for two-part header */
-.top-contact-bar {
-  height: 2.5rem; /* 40px */
-}
-
-.main-navigation-header {
-  top: 2.5rem; /* 40px */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-slider {
-    height: 80vh;
-    min-height: 500px;
-  }
-
-  .slider-navigation {
-    padding: 0 1rem;
-  }
-
-  .slider-btn {
-    width: 40px;
-    height: 40px;
-  }
-
-  .slider-btn i {
-    font-size: 1rem;
-  }
-
-  .slider-dots {
-    bottom: 1rem;
-  }
-
-  /* Mobile header adjustments */
-  .top-contact-bar {
-    height: auto;
-    min-height: 3rem;
-  }
-
-  .main-navigation-header {
-    top: auto;
-  }
+.swiper.bannerSlider .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  @apply bottom-8;
 }
