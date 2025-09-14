@@ -7,6 +7,14 @@ module.exports = {
         nunito: ["Nunito", "sans-serif"],
       },
       colors: {
+        red: {
+          50: "#f1453d",
+        },
+
+        green: {
+          50: "#8cc152",
+        },
+
         pink: {
           50: "#fdf2f8",
           100: "#fce7f3",
