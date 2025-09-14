@@ -59,3 +59,18 @@ const swiper = new Swiper(".swiper.bannerSlider", {
         clickable: true,
     },
 });
+
+
+new Swiper(".testimonial-swiper", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    slidesPerView: 1,
+    spaceBetween: 50,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+    },
+});
