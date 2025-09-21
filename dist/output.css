@@ -1725,10 +1725,6 @@ video {
   transition-duration: 150ms;
 }
 
-.\!delay-700{
-  transition-delay: 700ms !important;
-}
-
 .duration-300{
   transition-duration: 300ms;
 }
